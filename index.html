@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>RAUCHGOLD</title>
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="stylesheet" href="CSS/all.css">
+    </head>
+    <body>
+        
+        <header>
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                    <div class="container-fluid">
+                        <img src="Images/logo gold.jpg" alt="Avatar Logo" style="width:60px;" class="rounded-circle mx-3">
+                        <a class="navbar-brand text-warning  " href=#>RAUCHGOLD</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="mynavbar">
+                            <ul class="navbar-nav me-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Reservations</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Menu</a>
+                                    <ul class="dropdown-menu bg-light">
+                                        <li><a class="dropdown-item" href="#">Starters</a></li>
+                                        <li><a class="dropdown-item" href="#">Mains</a></li>
+                                        <li><hr class="dropdown-divider"></li>
+                                        <li><a class="dropdown-item" href="#">Desserts</a></li>
+                                        <li><a class="dropdown-item" href="#">Drinks</a></li>
+                                        <li><a class="dropdown-item" href="#">Signature Dishes</a></li>
+                                        <li><a class="dropdown-item" href="#">More…</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Experience</a>
+                                </li>
+                            </ul>
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="text" placeholder="Search">
+                                <button class="btn btn-outline-warning" type="button">Search</button>
+                                <button type="button" class="btn btn-warning ms-2 me-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </nav>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="loginModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header border-0 pb-0">
+                                <h4 class="modal-title">Log in</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                <form action="/action_page.php">
+                                    <div class="mb-3 mt-3">
+                                        <label for="email" class="form-label">Email:</label>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="pwd" class="form-label">Password:</label>
+                                        <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+                                    </div>
+                                    <div class="form-check mb-3">
+                                        <label class="form-check-label">
+                                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                                        </label>
+                                    </div>
+
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer border-0 py-0">
+                                        <button type="submit" class="btn btn-warning w-100">Log in</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+        </header>
+            <!-- ////////////////////////////////////////////////////////////////////////////// -->
+        <main class="vh-100 position-absolute"></main>     
+             <aside class="social-icons d-flex justify-content-end align-items-center ms-auto vh-100 fixed-top pe-1" style="right: 0; pointer-events: none;">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link social-link text-warning h3 mb-0" style="padding-right: 0; pointer-events: auto; padding-left: 5px;" href="#"><i class="fa-brands fa-square-facebook"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-link text-warning h3 mb-0" style="padding-right: 0; pointer-events: auto; padding-left: 5px;" href="#"><i class="fa-brands fa-square-twitter"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-link text-warning h3 mb-0" style="padding-right: 0; pointer-events: auto; padding-left: 5px;" href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-link text-warning h3 mb-0" style="padding-right: 0; pointer-events: auto; padding-left: 5px;" href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link social-link text-warning h3 mb-0" style="padding-right: 0; pointer-events: auto; padding-left: 5px;" href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </li>
+                    </ul>  
+            </aside>  <!-- /social-icons -->
+
+            <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators/dots -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                </div>
+                
+                <!-- The slideshow/carousel -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active w-100 vh-100">
+                        <img src="Images/pc bg res.png" alt="Los Angeles" class="d-block w-100 img-fluid h-100">
+                        <div class="carousel-caption rounded-2 mb-3 mx-auto border border-1 border-white" style="width: 60%; background: rgb(0, 0, 0, 0.5);">
+                            <h3>Welcome to Rauchgold</h3>
+                            <p class="fst-italic">Fine dining where warmth, elegance, and flavor unite.</p>
+                            <form class="d-flex"></form>
+                                <button type="button" class="btn btn-outline-warning ms-2 me-3" data-bs-toggle="modal" data-bs-target="#myModal1">Reserve</button>
+                            </form>  
+                        </div>
+                    </div>
+                    <div class="carousel-item vh-100">
+                        <img src="Images/pc bg res1.png" alt="Chicago" class="d-block w-100 img-fluid h-100" >
+                        <div class="carousel-caption rounded-2 mb-3 mx-auto border border-1 border-white" style="width: 60%; background: rgb(0, 0, 0, 0.5);">
+                            <h3>A View That Enhances Taste</h3>
+                            <p class="fst-italic">Enjoy your meal with a serene riverside view, designed to elevate your dining experience.</p>
+                            <form class="d-flex"></form>
+                                <button type="button" class="btn btn-outline-warning ms-2 me-3" data-bs-toggle="modal1" data-bs-target="#myModal1">Explore the View</button>
+                            </form>  
+                        </div> 
+                    </div>
+                    <div class="carousel-item vh-100">
+                        <img src="Images/pc bg16.jpg" alt="New York" class="d-block w-100 img-fluid h-100">
+                        <div class="carousel-caption rounded-2 mb-3 mx-auto border border-1 border-white" style="width: 60%; background: rgb(0, 0, 0, 0.5);">
+                            <h3>Refined Elegant Atmosphere</h3>
+                            <p class="fst-italic">Warm lighting and refined interiors for intimate, unforgettable moments.</p>
+                            <form class="d-flex"></form>
+                                <button type="button" class="btn btn-outline-warning ms-2 me-3" data-bs-toggle="modal1" data-bs-target="#myModal1">Discover the Ambience</button>
+                            </form>  
+                        </div>  
+                    </div>
+                    <div class="carousel-item vh-100">
+                        <img src="Images/pc bg res6.jpg" alt="New York" class="d-block w-100 img-fluid h-100" >
+                        <div class="carousel-caption rounded-2 mb-3 mx-auto border border-1 border-white" style="width: 60%; background: rgb(0, 0, 0, 0.5);">
+                            <h3>Moments in Every Bite</h3>
+                            <p class="fst-italic">From lively conversations to perfectly plated dishes, every visit tells a story worth savoring.</p>
+                            <form class="d-flex"></form>
+                                <button type="button" class="btn btn-outline-warning ms-2 me-3" data-bs-toggle="modal1" data-bs-target="#myModal1">Book Your Table</button>
+                            </form>  
+                        </div>  
+                    </div>
+                </div>
+                
+                <!-- Left and right controls/icons -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </main>
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="sec1">
+
+            <div class=" container-fluid p-3 rounded-2 " style="background-color: #EFEDE6;">
+                <h2 class="text-dark">Welcome</h2>
+                <p class="text-secondary fst-italic">Where elegant flavors, refined ambiance, and thoughtful service come together in perfect harmony.</p>
+                <button class="btn  btn-outline-warning" type="button">Discover More</button>
+            </div>
+
+            <hr class="my-3">
+
+            <div class="header-con container-fluid p-4 text-white rounded-2">
+                <h2 class="text-center" style="color: #dba203;" >The Most Famous Dishes In Our Restaurant</h2>
+            </div>
+
+            <!-- collapse -->
+            <div class="accordion accordion-flush my-4" id="accordionExample">
+                <div class="accordion-item ">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button collapsed border-1 border-bottom border-secondary rounded-1 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            Signature Beef
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            Tender beef slow-braised to perfection, paired with silky mashed roots and fire-kissed seasonal vegetables. A rich, comforting dish that reflects Rauchgold’s signature balance of warmth and refinement.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed border-1 border-bottom border-secondary rounded-1 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Celestial Shell
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div class="accordion-body ">
+                            Crafted to awaken the senses, this signature appetizer blends oceanic luxury with visual poetry. Delicate lobster medallions rest in a golden citrus emulsion, crowned with edible blooms and microgreens. A tartlet of caviar and mango adds contrast and depth, while the shell's sculptural presence evokes the artistry behind every detail. A dish that whispers refinement and celebrates the elegance of nature's finest.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed border-1 border-bottom border-1 border-bottom border-secondary rounded-1 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Maroon Cloud
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Indulge in our most iconic signature creation, a breathtaking masterpiece that balances a vibrant citrus reduction with the delicate crunch of a hand-crafted crimson tuile. This celebrated dessert is a true symphony of textures, embodying the artistic elegance and culinary excellence that define the Rauchgold experience.
+                        </div>
+                    </div>
+                </div>
+            </div>  <!-- /accordion -->
+            <hr>
+        </section>  <!-- /sec1 -->
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+         <section class="sec2">
+
+            <div class="header-con container-fluid p-4 bg-dark text-warning rounded-2">
+                <h2 class="text-center text-capitalize" style="color: #dba203;">Reservation ticket</h2>
+            </div>
+            <form action="/action_page.php" class="p-4 rounded-1 border border-1" style="background-color: #e4e1d6; border:gray;">
+                <h4 class="text-capitalize">Request a Table at Rauchgold &nbsp;	 <span class="text-black-50 fst-italic"> Write Here </span></h4>
+
+                <button type="button" class="btn btn-warning mb-3 cobyBtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Send Reservation
+                </button> <span class="badge bdg rounded-pill bg-secondary align-text-top ms-2" style="display:none;">Sent</span>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Rauchgold Request Ticket</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Request already submited, Thank you for choosing Rauchgold.
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="3" id="comment" name="text" placeholder="Write your reservation details here — date, time and number of guests."></textarea>
+                </div>
+            </form>  <!-- /1st-form -->
+            <hr>
+
+            <div class="header-con container-fluid p-4 bg-dark text-warning rounded-2">
+                <h2 class="text-center text-capitalize" style="color: #dba203;">Special Requests</h2>
+            </div>
+            <form action="/action_page.php" class="p-4 rounded-1 border border-1" style="background-color: #e4e1d6; border:gray">
+                <h4 class="text-capitalize">Personalize Your Dining Experience &nbsp;	 <span class="text-black-50 fst-italic"> Write Here </span></h4>
+
+                <button type="button" class="btn btn-warning mb-3 cobyBtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Send Request
+                </button> <span class="badge bdg rounded-pill bg-secondary align-text-top ms-2" style="display:none;">Sent</span>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Rauchgold Request Ticket</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Request already submited, Thank you for choosing Rauchgold. 
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="3" id="comment" name="text" placeholder="Let us know about dietary preferences, allergies, or special occasions."></textarea>
+                </div>
+            </form>  <!-- /2nd-form -->
+            <hr>
+
+            <div class="header-con container-fluid p-4 bg-dark text-warning rounded-2">
+                <h2 class="text-center text-capitalize" style="color: #dba203;">Guest Feedback</h2>
+            </div>
+            <form action="/action_page.php" class="p-4 rounded-1 border border-1" style="background-color: #e4e1d6; border:gray">
+                <h4 class="text-capitalize">Share Your Rauchgold Experience &nbsp;	 <span class="text-black-50 fst-italic"> Write Here </span></h4>
+
+                <button type="button" class="btn btn-warning mb-3 cobyBtn" data-bs-toggle="modal" data-bs-target="#myModal">
+                    Send Feedback
+                </button> <span class="badge bdg rounded-pill bg-secondary align-text-top ms-2 "style="display:none;">Sent</span>
+
+                <!-- The Modal -->
+                <div class="modal fade" id="myModal">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+
+                            <!-- Modal Header -->
+                            <div class="modal-header">
+                                <h4 class="modal-title">Rauchgold Request Ticket</h4>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <!-- Modal body -->
+                            <div class="modal-body">
+                                Request already submited, Thank you for choosing Rauchgold.
+                            </div>
+
+                            <!-- Modal footer -->
+                            <div class="modal-footer border-top-0">
+                                <button type="button" class="btn btn-warning" data-bs-dismiss="modal">OK</button>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 mt-3">
+                    <textarea class="form-control" rows="3" id="comment" name="text" placeholder="We value your thoughts — share your impressions with us."></textarea>
+                </div>
+            </form>  <!-- /3rd-form -->
+            <hr>
+         </section>  <!-- /sec2 -->
+         <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+         <section class="sec3">
+
+            <div class="bg-con container-fluid text-center my-3 ">
+
+                <div class="parent-con py-5 bg-white ">
+
+                    <div class="header-con container-fluid mb-5 py-4 bg-dark text-warning rounded-2">
+                        <h2 class="text-center text-capitalize" style="color: #dba203;">Popular Dishes in our Restaurant</h2>
+                    </div>
+
+                    <div class="cards-con row justify-content-center g-4 m-auto w-100 px-5">
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-3 order-sm-1" >
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);">
+                                <img class="card-img-top rounded-1 " src="Images/soup55.png" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Roasted Velvet</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">A smooth roasted-vegetable soup with aromatic herbs, warm and perfectly balanced.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /1st card con -->
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-1 order-sm-2">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/starter555.jpg" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Celestial Shell</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">A lobster medallion in citrus gold, vibrant, luxurious and artfully composed.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /2nd card con -->
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-2 order-sm-3">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/salad8.jpg" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Fresh Harmony</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">Seasonal greens with citrus notes, fresh balance. Crisp, fresh, and clean flavors.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /3rd card con -->
+                    </div>   <!-- /cards-con -->
+
+                    <div class="cards-con row justify-content-center g-4 m-auto w-100 px-5 my-4">
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-sm-1" >
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/food11.jpg" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Aurum Fish</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">Crispy salmon with asparagus, rich yet perfectly balanced.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /1st card con -->
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-sm-2">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/food1.jpg" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Signature Beef</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">Slow-cooked beef, deep flavors, elegant finish. "Signature Taste" Bold & Juicy.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /2nd card con -->
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-sm-3">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/food177.png" alt="Card image" style="width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Thyme & Plum</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">A roasted chicken with plum glaze, warm, aromatic and gracefully brushed.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /3rd card con -->
+                    </div>   <!-- /cards-con -->
+
+                    <div class="cards-con row justify-content-center g-4 m-auto w-100 px-5 mb-3">
+                        
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-2 order-sm-1">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/desert777.png" alt="Card image" style="max-width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Golden Taste</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">A pear dessert with floral accents, tender, aromatic and elegantly glazed in citrus.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /1st card con -->
+
+                        <div class="d-flex rounded-2 col-10 col-sm-4 text-start order-1 order-sm-2">
+                            <div class="card card-overlay p-1 h-100" style="box-shadow: 8px 8px 12px rgba(255, 208, 0, 0.5);" >
+                                <img class="card-img-top rounded-1 " src="Images/desert2444.png" alt="Card image" style="max-width:100%; height: 250px;">
+                                <div class="card-body d-flex flex-column" style="z-index: 2;">
+                                    <h4 class="card-title">Maroon Cloud</h4>
+                                    <a href="#" class="btn discover-btn btn-outline-warning text-uppercase align-self-end mt-2 mb-3 text-light" style="background-color: #F5B400; ">Discover</a>
+                                    <p class="card-text fst-italic">A tropical dessert with floral notes, silky, radiant and elegantly plated.</p>
+                                </div>
+                            </div>  <!-- /card -->
+                        </div>  <!-- /2nd card con -->
+
+                    </div>   <!-- /cards-con -->
+
+                </div>   <!-- parent-con -->
+
+            </div>   <!-- /bg-con -->
+            <hr>
+        </section>  <!-- /sec3 -->
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+         
+        <section class="sec4">
+            <div class="header-con container-fluid mb-5 py-4 bg-dark text-warning rounded-2">
+                <h2 class="text-center text-capitalize" style="color: #dba203;">Behind the Excellence</h2>
+            </div>
+            <div class="persons-container row justify-content-center g-5 m-auto w-100">
+                <div class="col-10 col-sm-3 d-flex justify-content-center gy-4">
+                    <div class="card person position-relative p-0 border border-dark" style="height: 250px;border-radius: 24px; cursor: pointer; transition: all ease 0.8s;">
+                        <img class="card-img-top w-100 h-100 " src="Images/chef4.jpg" alt="Head Chef" style=" border-radius: 24px;">
+                        <div class="card-img-overlay h-100 px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.3); border-radius: 24px;">
+                            <h6 class="card-title">Leadership Team</h6>
+                            <p class="card-text small mb-5 mb-sm-2 mb-lg-5"><i class="fa-solid fa-utensils"></i> Culinary Excellence</p>
+                            <img style="width:70px ; height: 85px; bottom:50px;" src="Images/chef4.jpg" alt="Head Chef" class="rounded-pill border border-1 border-white position-absolute object-fit-cover" >
+                            <div class="position-absolute" style="bottom:5px">
+                                <h6 class="small mb-1">Chef Pedro Roberto</h6>
+                                <p class="small mb-0 fst-italic">Head Chef</p>
+                            </div>
+                        </div>  <!-- /card-img-overlay -->
+                    </div>  <!-- /person -->
+                </div>  <!-- /card1 -->
+                <div class="col-10 col-sm-3 d-flex justify-content-center gy-4">
+                    <div class="card person position-relative p-0 border border-dark" style="height: 250px; border-radius: 24px; cursor: pointer; transition: all ease 0.8s;">
+                        <img class="card-img-top w-100 h-100" src="Images/person111.jpg" alt="General Manager" style=" border-radius:24px">
+                        <div class="card-img-overlay h-100 px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.3); border-radius: 24px;">
+                            <h6 class="card-title">Leadership Team</h6>
+                            <p class="card-text small mb-5 mb-sm-2 mb-lg-5"><i class="fa-solid fa-user-tie"></i> Operations</p>
+                            <img class="rounded-pill border border-1 border-white position-absolute object-fit-cover" src="Images/person111.jpg" alt="General Manager" style="width:70px ; height: 85px; bottom:50px;">
+                            <div class="position-absolute" style="bottom:5px">
+                                <h6 class="small mb-1">Mr. Selim Ezz</h6>
+                                <p class="small mb-0 fst-italic">General Manager</p>
+                            </div>
+                        </div>  <!-- /card-img-overlay -->
+                    </div>  <!-- /person -->
+                </div>  <!-- /card2 -->
+                <div class="col-10 col-sm-3 d-flex justify-content-center gy-4">
+                    <div class="card person position-relative p-0 border border-dark" style="height: 250px; border-radius: 24px; cursor: pointer; transition: all ease 0.8s;">
+                        <img class="card-img-top w-100 h-100 " src="Images/person222.jpg" alt="General Manager" style=" border-radius: 24px;">
+                        <div class="card-img-overlay h-100 px-3 py-2 text-white" style="background-color: rgba(0, 0, 0, 0.3); border-radius: 24px;">
+                            <h6 class="card-title">Leadership Of Our Team</h6>
+                            <p class="card-text small mb-5 mb-sm-2 mb-lg-5"><i class="fa-solid fa-laptop-code"></i> Web Dev</p>
+                            <img class="rounded-pill border border-1 border-white position-absolute object-fit-cover" src="Images/person222.jpg" alt="General Manager" style="width:70px ; height: 85px; bottom:50px;">
+                            <div class="position-absolute" style="bottom:5px">
+                                <h6 class="small mb-1">Eng. Farid Hamed</h6>
+                                <p class="small mb-0 fst-italic">Web Developer</p>
+                            </div>
+                        </div>  <!-- /card-img-overlay -->
+                    </div>  <!-- /person -->
+                </div>  <!-- /card3 -->
+            </div>  <!-- /persons-container -->
+        </section>  <!-- /sec4 -->
+        <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="sec5">
+            <h2 class="text-center fw-bold mb-3" style=" color: #dba203; margin-top: 96px;">Behind The Taste</h2>
+            <div class="podcast-container row justify-content-center g-5 m-auto px-2 px-md-5 mb-5">
+                <div class="podcast-item d-flex flex-column flex-md-row-reverse col-12 col-md-11 px-md-2">
+                    <div class="podcast-image d-none d-md-block col-md-5" style="height: 350px;clip-path: polygon(0 0, 100% 0, 100% 99%, 21% 99%);">
+                        <img src="Images/bg18.jpg" alt="..." class="w-100 h-100" style="transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-image  col-12 d-block d-md-none w-100 overflow-hidden" style="max-height: 75vh;">
+                        <img src="Images/bg18.jpg" alt="..." class="w-100 hounded" style="height:300px ; transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-content d-flex flex-column justify-content-evenly text-start col-12 col-md-7 ps-2 py-4">
+                        <div class="podcast-text">
+                            <h3 class="podcast-title text-warning">Rauchgold Origins</h3>
+                            <h6 class="text-secondary border-bottom border-dark-subtle border-3 d-inline pb-3 fst-italic">Chef's Signature Smoke Experience</h6>
+                            <p class="mt-4">Inspired by the soul of fire and smoke, this dish captures the essence of Rauchgold. Slow-smoked ingredients meet open flame techniques to create deep, bold flavors. Best enjoyed fresh and hot, allowing the smoky aroma to unfold with every bite.</p>
+                        </div>
+                        <div class="podcast-btns">
+                            <button type="button" class="podcast-btn btn btn-warning text-light"><i class="fa-solid fa-podcast"></i> Listen Now</button>
+                            <button type="button" class="podcast-btn btn btn-warning text-light mx-2"><i class="fa-solid fa-heart"></i> Like</button>
+                            <button type="button" class="podcast-btn btn btn-outline-warning text-light"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>  <!-- /podcast-btns -->
+                    </div>  <!-- /podcast-text -->
+                </div>  <!-- /podcast-item1 -->
+
+                <div class="podcast-item d-flex flex-column flex-md-row col-12 col-md-11 px-md-2">
+                    <div class="podcast-image d-none d-md-block col-md-5" style="height: 350px;clip-path: polygon(0 0, 100% 0, 79% 99%, 0 99%);">
+                        <img src="Images/pc bg2.jpg" alt="..." class="w-100 h-100" style="transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-image  col-12 d-block d-md-none w-100 overflow-hidden" style="max-height: 75vh;">
+                        <img src="Images/pc bg2.jpg" alt="..." class="w-100 rounded" style="height:300px ; transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-content d-flex flex-column justify-content-evenly text-start col-12 col-md-7 ps-2 py-4">
+                        <div class="podcast-text">
+                            <h3 class="podcast-title text-warning">Sea to Table</h3>
+                            <h6 class="text-secondary border-bottom border-dark-subtle border-3 d-inline pb-3 fst-italic">Lobster Pasta by Chef Marco</h6>
+                            <p class="mt-4">A celebration of the sea, this dish brings together fresh lobster and handcrafted pasta. Inspired by coastal flavors, it’s designed to be enjoyed slowly, letting the richness of the sauce and the tenderness of the seafood shine through every forkful.</p>
+                        </div>
+                        <div class="podcast-btns">
+                            <button type="button" class="podcast-btn btn btn-warning text-light"><i class="fa-solid fa-podcast"></i> Listen Now</button>
+                            <button type="button" class="podcast-btn btn btn-warning text-light mx-2"><i class="fa-solid fa-heart"></i> Like</button>
+                            <button type="button" class="podcast-btn btn btn-outline-warning text-light"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>  <!-- /podcast-btns -->
+                    </div>  <!-- /podcast-text -->
+                </div>  <!-- /podcast-item2 -->
+
+                <div class="podcast-item d-flex flex-column flex-md-row-reverse col-12 col-md-11 px-md-2">
+                    <div class="podcast-image d-none d-md-block col-md-5" style="height: 350px;clip-path: polygon(0 0, 100% 0, 100% 99%, 21% 99%);">
+                        <img src="Images/pc bg8.jpg" alt="..." class="w-100 h-100" style="transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-image  col-12 d-block d-md-none w-100 overflow-hidden" style="max-height: 75vh;">
+                        <img src="Images/pc bg8.jpg" alt="..." class="w-100 rounded" style="height:300px ; transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-content d-flex flex-column justify-content-evenly text-start col-12 col-md-7 ps-2 py-4">
+                        <div class="podcast-text">
+                            <h3 class="podcast-title text-warning">Frozen Perfection</h3>
+                            <h6 class="text-secondary border-bottom border-dark-subtle border-3 d-inline pb-3 fst-italic">Chef's Special Cold-Smoked Salmon Creation</h6>
+                            <p class="mt-4">This dish explores contrast — freshness and smoke, softness and texture. Inspired by modern Japanese techniques, it’s best enjoyed chilled, allowing the delicate balance of flavors to unfold naturally with every bite.</p>
+                        </div>
+                        <div class="podcast-btns">
+                            <button type="button" class="podcast-btn btn btn-warning text-light"><i class="fa-solid fa-podcast"></i> Listen Now</button>
+                            <button type="button" class="podcast-btn btn btn-warning text-light mx-2"><i class="fa-solid fa-heart"></i> Like</button>
+                            <button type="button" class="podcast-btn btn btn-outline-warning text-light"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>  <!-- /podcast-btns -->
+                    </div>  <!-- /podcast-text -->
+                </div>  <!-- /podcast-item3 -->
+
+                <div class="podcast-item d-flex flex-column flex-md-row col-12 col-md-11 px-md-2 mb-5">
+                    <div class="podcast-image d-none d-md-block col-md-5" style="height: 350px;clip-path: polygon(0 0, 100% 0, 79% 99%, 0 99%);">
+                        <img src="Images/pc bg1.jpg" alt="..." class="w-100 h-100" style="transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-image  col-12 d-block d-md-none w-100 overflow-hidden" style="max-height: 75vh;">
+                        <img src="Images/pc bg1.jpg" alt="..." class="w-100 rounded" style="height:300px ; transition: transform ease-in-out 0.8s;">
+                    </div>  <!-- /podcast-image -->
+                    <div class="podcast-content d-flex flex-column justify-content-evenly text-start col-12 col-md-7 ps-2 py-4">
+                        <div class="podcast-text">
+                            <h3 class="podcast-title text-warning">Golden Indulgence</h3>
+                            <h6 class="text-secondary border-bottom border-dark-subtle border-3 d-inline pb-3 fst-italic">Chef's Dessert Signature</h6>
+                            <p class="mt-4">This dish is where flavor meets art. Inspired by modern plating techniques, every element is carefully placed to create balance, contrast, and visual harmony. Best enjoyed slowly, allowing each bite to reveal a different layer of texture and sweetness.</p>
+                        </div>
+                        <div class="podcast-btns">
+                            <button type="button" class="podcast-btn btn btn-warning text-light"><i class="fa-solid fa-podcast"></i> Listen Now</button>
+                            <button type="button" class="podcast-btn btn btn-warning text-light mx-2"><i class="fa-solid fa-heart"></i> Like</button>
+                            <button type="button" class="podcast-btn btn btn-outline-warning text-light"><i class="fa-solid fa-share-nodes"></i> Share</button>
+                        </div>  <!-- /podcast-btns -->
+                    </div>  <!-- /podcast-text -->
+                </div>  <!-- /podcast-item4 -->
+            </div>  <!-- /podcast-container -->
+        </section>  <!-- /sec5 -->
+        <!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+        <section class="sec6">
+            <div class="container mb-5">
+                <div class="row gap-5 justify-content-center">
+                    <div class="card social-card col-12 col-sm-6 col-md-4 col-lg-3 mx-5 mb-3 mx-sm-3" style="height: 200px;max-width: 200px; transition: all ease-in-out 0.5s;cursor: pointer;">
+                        <div class="card-body text-center d-flex flex-column justify-content-evenly rounded-2">
+                            <h5 class="card-title">Follow Us</h5>
+                            <img class="mx-auto rounded-2" src="Images/facebook0.png" alt="" style="width: 80%;">
+                            <a href="#" class="card-link link-warning text-decoration-none fst-italic">Visit Page</a>
+                        </div>
+                    </div>
+                    <div class="card social-card col-12 col-sm-6 col-md-4 col-lg-3 mx-5 mb-3 mx-sm-3" style="height: 200px;max-width: 200px; transition: all ease-in-out 0.5s;cursor: pointer;">
+                        <div class="card-body text-center d-flex flex-column justify-content-evenly rounded-2">
+                            <h5 class="card-title">Follow Us</h5>
+                            <img class="mx-auto rounded-2" src="Images/instanew.png" alt="" style="width: 80%;">
+                            <a href="#" class="card-link link-warning text-decoration-none fst-italic">Visit Page</a>
+                        </div>
+                    </div>
+                    <div class="card social-card col-12 col-sm-6 col-md-4 col-lg-3 mx-5 mb-3 mx-sm-3" style="height: 200px;max-width: 200px; transition: all ease-in-out 0.5s;cursor: pointer;">
+                        <div class="card-body text-center d-flex flex-column justify-content-evenly rounded-2">
+                            <h5 class="card-title">Follow Us</h5>
+                            <img class="mx-auto rounded-2" src="Images/x.png" alt="" style="width: 80%;">
+                            <a href="#" class="card-link link-warning text-decoration-none fst-italic">Visit Page</a>
+                        </div>
+                    </div>
+                    <div class="card social-card col-12 col-sm-6 col-md-4 col-lg-3 mx-5 mb-3 mx-sm-3" style="height: 200px;max-width: 200px; transition: all ease-in-out 0.5s;cursor: pointer;">
+                        <div class="card-body text-center d-flex flex-column justify-content-evenly rounded-2">
+                            <h5 class="card-title">Follow Us</h5>
+                            <img class="mx-auto rounded-2" src="Images/linkin.png" alt="" style="width: 80%;">
+                            <a href="#" class="card-link link-warning text-decoration-none fst-italic">Visit Page</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>  <!-- /sec6 -->
+        <br>
+        <!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        <footer>
+            <div class="container-fluid py-1 bg-dark" style="background-color: #1c1c1c;">
+                <hr class="text-secondary my-4">
+
+                <div class="container pb-1 d-none d-sm-block">
+                    <div class="row justify-content-center text-center">
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px; ">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="image" style="width:100px">                            
+                            <h4 class="text-white mt-1">Contact Us</h4>                          
+                        </div>
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px ;">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="image" style="width:100px">
+                            <h4 class="text-white mt-1">Quick Links</h4>                           
+                        </div>
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px ;">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="Card image" style="width:100px">                            
+                            <h4 class="text-white mt-1">Why Choose Us</h4>                           
+                        </div>
+                    </div>
+                    <hr class="text-secondary my-0">
+                    <div class="row justify-content-center">
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px; ">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Phone: +20 01123456789</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Location: Cairo, Egypt</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Email: info@rauchgold.com</a></div>                        
+                        </div>
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px; ">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Home</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Menu</a></div> 
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Contact</a></div>                       
+                        </div>
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px;">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Fresh Ingredients</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Quality Service</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Memorable Experience</a></div>                       
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-1 d-sm-none">
+                    <div class="d-flex flex-column align-items-center text-center">
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px; ">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="image" style="width: 125px;">                            
+                            <h4 class="text-white mt-2">Contact Us</h4>                          
+                        </div>
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px; ">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Phone: +20 01123456789</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Location: Cairo, Egypt</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Email: info@rauchgold.com</a></div>                        
+                        </div>
+                        <div class="w-100 bg-secondary mt-3 mb-4" style="height: 1px; opacity:0.3"></div>
+                        
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px ;">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="image" style="width: 125px">
+                            <h4 class="text-white mt-2">Quick Links</h4>                           
+                        </div>
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px; ">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Home</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Menu</a></div> 
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Contact</a></div>                       
+                        </div>
+                        <div class="w-100 bg-secondary mt-3 mb-4" style="height: 1px; opacity:0.3"></div>
+
+                        <div class="col-12 col-sm-4 border-0" style="max-width:250px ;">
+                            <img class="rounded-circle" src="Images/f logo2.jpg" alt="Card image" style="width:125px">                            
+                            <h4 class="text-white mt-2">Why Choose Us</h4>                           
+                        </div>
+                        <div class="d-flex flex-column g-2 col-12 col-sm-4 text-center" style="max-width:250px;">
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Fresh Ingredients</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Quality Service</a></div>
+                            <div><a href="#" class="f-link position-relative text-white-50 text-decoration-none pb-1">Memorable Experience</a></div>                       
+                        </div>
+                    </div>
+
+                </div>
+                <hr class="text-secondary my-3">
+                <p class="text-center text-secondary mb-0 small pt-1">© 2025 FoodExpress. All Rights Reserved.</p>
+                <p class="text-center text-secondary small pb-1">Designed by Kholoud Fawzy</p>
+            </div>
+        </footer>
+         
+        
+        <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    </body>
+</html>
