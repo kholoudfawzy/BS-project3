@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
 .social-link:hover {
     opacity: 0.7;
 }
@@ -109,3 +113,4 @@
     height: 1px;
     width: 100%;
 }
+
